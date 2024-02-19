@@ -229,13 +229,13 @@ button:hover {
 .buy-button {
   background-color: #FFC107; /* Cor chamativa para o botão */
   color: #333; /* Cor do texto do botão */
-  padding: 25px 40px; /* Padding maior para um botão maior */
   font-size: 1.5em; /* Tamanho da fonte maior para o botão */
   font-weight: 700; /* Peso da fonte para negrito */
   border-radius: 50px; /* Bordas arredondadas para um estilo mais moderno */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar destaque ao botão */
   transition: background-color 0.3s, transform 0.3s; /* Suaviza a transição de cor e transformação */
 }
+
 
   .buy-button:hover, .buy-button:focus {
     background-color: #FFA000; /* Cor mais escura ao interagir */
@@ -250,10 +250,22 @@ button:hover {
   }
 
   .buy-button {
-    width: 30%; /* Faz com que ocupem a largura total do contêiner */
+    width: 100%; /* Faz com que ocupem a largura total do contêiner */
     text-align: center; /* Garante que o texto dentro deles esteja centralizado */
-    margin: 10px 0; /* Adiciona um espaçamento vertical para separá-los */
+    margin: 0; /* Adiciona um espaçamento vertical para separá-los */
   }
+  .buy-button-link {
+    background-color: #FFC107; /* Cor chamativa para o botão */
+    font-size: 1.5em; /* Tamanho da fonte maior para o botão */
+    font-weight: 700; /* Peso da fonte para negrito */
+    border-radius: 50px; /* Bordas arredondadas para um estilo mais moderno */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar destaque ao botão */
+    transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .buy-button-link:hover {
+      background-color: #FFA000; /* Cor de fundo ao passar o mouse */
+    }
 
 @media (max-width: 768px) {
   .intro {
