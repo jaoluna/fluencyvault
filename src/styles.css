@@ -1,0 +1,279 @@
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em; /* Tamanho maior para o título */
+  font-weight: 700; /* Peso da fonte para negrito */
+  margin-bottom: 0.5em; /* Espaçamento abaixo do título */
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.25em; /* Tamanho maior para o texto do parágrafo */
+  line-height: 1.6; /* Espaçamento da linha para melhor legibilidade */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Ajustado para garantir padding em todos os lados */
+}
+
+.block {
+  width: calc(100% - 30px); /* Ajuste para garantir espaço nas laterais */
+  margin: 20px 0;
+  padding: 20px; /* Ajustado para espaçamento interno */
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.intro, .call-to-action {
+  color: #fff;
+}
+
+.intro {
+  background-color: #B22234;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.intro-content {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.intro-content, .logo-container {
+  flex: 1;
+  text-align: center;
+
+}
+
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.call-to-action {
+  background-color: #3C3B6E;
+  display: flex;
+  flex-direction: column; /* Organiza os filhos verticalmente */
+  align-items: center; /* Centraliza os itens na direção cruzada (horizontal) */
+  justify-content: center; /* Centraliza os itens na direção principal (vertical) */
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.video iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+  border: none;
+}
+
+.logo-container {
+  flex: 0 0 250px; /* Ajuste a largura do contêiner da logo conforme necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.logo {
+  max-height: 100%; /* A logo preencherá o espaço vertical disponível */
+  max-width: 100%; /* A logo preencherá o espaço horizontal do contêiner */
+}
+
+.intro-content {
+  /* Centraliza o conteúdo de texto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.features ul {
+  padding: 0;
+  margin-bottom: 60px; /* Aumenta a margem inferior para criar mais espaço após o bloco de características */
+  margin-top: 0.5em; /* Mais espaço acima da lista */
+  
+}
+
+.features li, .call-to-action p {
+  font-size: 1.3em; /* Simplificar e manter o tamanho da fonte consistente */
+}
+
+/* Você pode remover sombras e bordas arredondadas se desejar um design mais flat */
+.block {
+  border-radius: 0; /* Opcional: remover as bordas arredondadas */
+  box-shadow: none; /* Opcional: remover as sombras */
+}
+
+
+.testimonials {
+  background-color: #fff; /* Ou outra cor para destacar a seção */
+  border: 1px solid #ccc; /* Opcional, para delinear a seção */
+  padding: 20px;
+  margin-top: 40px; /* Espaço acima da seção de avaliações */
+}
+
+.testimonial {
+  background-color: #f0f0f0; /* Um leve contraste para cada avaliação */
+  border-left: 4px solid #4CAF50; /* Uma barra lateral para destaque */
+  margin: 20px 0;
+  padding: 15px;
+  font-style: italic; /* Estilo para as citações de avaliação */
+}
+
+.testimonial p {
+  quotes: "“" "”" "‘" "’";
+  
+}
+
+.testimonial p:before {
+  content: open-quote;
+}
+
+.testimonial p:after {
+  content: close-quote;
+}
+
+.testimonial p {
+  display: inline; /* Assegura que as aspas apareçam corretamente */
+}
+
+
+.price-offer {
+  font-size: 3em; /* Aumenta significativamente o tamanho da fonte */
+  color: #FFD700; /* Uma cor vibrante para alto contraste */
+  font-weight: bold; /* Faz o texto ser negrito */
+  background-color: #2E2E2E; /* Fundo escuro para a oferta se destacar */
+  padding: 10px 20px; /* Padding para dar mais espaço ao redor do texto */
+  border-radius: 10px; /* Bordas arredondadas para um visual moderno */
+  display: inline-block; /* Permite aplicar padding e background-color */
+  margin: 20px 0; /* Espaçamento acima e abaixo para destacar */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para adicionar profundidade */
+}
+
+.inline-link {
+  color: #FFD700; /* Cor de destaque para o link dentro do texto */
+  text-decoration: underline; /* Sublinhado para indicar que é um link clicável */
+  font-weight: 700; /* Peso da fonte para negrito */
+}
+
+.inline-link:hover, .inline-link:focus {
+  color: #FFC107; /* Cor mais escura no hover e focus */
+  text-decoration: none; /* Remover sublinhado ao passar o mouse ou focar */
+}
+
+.buy-button {
+  background-color: #FFC107; /* Cor chamativa para o botão */
+  color: #333; /* Cor do texto do botão */
+  padding: 25px 40px; /* Padding maior para um botão maior */
+  font-size: 1.5em; /* Tamanho da fonte maior para o botão */
+  font-weight: 700; /* Peso da fonte para negrito */
+  border-radius: 50px; /* Bordas arredondadas para um estilo mais moderno */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar destaque ao botão */
+  transition: background-color 0.3s, transform 0.3s; /* Suaviza a transição de cor e transformação */
+}
+
+  .buy-button:hover, .buy-button:focus {
+    background-color: #FFA000; /* Cor mais escura ao interagir */
+    transform: translateY(-2px); /* Efeito de "levantar" um pouco o botão */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+  }
+
+  .price-offer{
+    width: 20%; /* Faz com que ocupem a largura total do contêiner */
+    text-align: center; /* Garante que o texto dentro deles esteja centralizado */
+    margin: 10px 0; /* Adiciona um espaçamento vertical para separá-los */
+  }
+
+  .buy-button {
+    width: 30%; /* Faz com que ocupem a largura total do contêiner */
+    text-align: center; /* Garante que o texto dentro deles esteja centralizado */
+    margin: 10px 0; /* Adiciona um espaçamento vertical para separá-los */
+  }
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-content, .logo-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .logo-container {
+    order: -1; /* Isso garantirá que a logo apareça acima do texto em telas menores */
+  }
+  .price-offer, .buy-button {
+    width: auto; /* Permite que o tamanho se ajuste ao conteúdo */
+    padding: 10px 20px; /* Ajusta o padding para melhor se adequar a telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 10px;
+  }
+
+  .block, .video {
+      width: calc(100% - 20px); /* Reduz ainda mais para pequenas telas */
+      padding: 10px;
+      margin: 10px auto;
+  }
+
+  .video iframe {
+      height: 200px;
+  }
+}
