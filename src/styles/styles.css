@@ -210,6 +210,17 @@ button:hover {
   font-weight: 700; /* Peso da fonte para negrito */
 }
 
+.inline-link-segredo {
+  color: #D50000; /* Cor de destaque para o link dentro do texto */
+  text-decoration: underline; /* Sublinhado para indicar que é um link clicável */
+  font-weight: 700; /* Peso da fonte para negrito */
+}
+
+.inline-link-segredo:hover, .inline-link-segredo:focus {
+  color: #0047AB; /* Cor mais escura no hover e focus */
+  text-decoration: none; /* Remover sublinhado ao passar o mouse ou focar */
+}
+
 .inline-link:hover, .inline-link:focus {
   color: #FFC107; /* Cor mais escura no hover e focus */
   text-decoration: none; /* Remover sublinhado ao passar o mouse ou focar */
