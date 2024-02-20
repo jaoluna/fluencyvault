@@ -1,302 +1,415 @@
-body {
-  font-family: 'Merriweather', serif;
+/* Reset básico para padronizar estilos entre navegadores */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f0f0f0;
+}
+
+body, html {
+  font-family: 'Montserrat', serif;
+  background-color: #FFF; /* Fundo ainda mais claro para um look clean */
   color: #333;
+  line-height: 1.6;
+  font-size: 18px; /* Tamanho de fonte para melhor legibilidade */
 }
 
-h1 {
-  font-size: 2.5em; /* Tamanho maior para o título */
-  font-weight: 700; /* Peso da fonte para negrito */
-  margin-bottom: 0.5em; /* Espaçamento abaixo do título */
-}
-
-h2 {
-  font-size: 2em;
-  font-weight: 700;
-}
-
-p {
-  font-size: 1.25em; /* Tamanho maior para o texto do parágrafo */
-  line-height: 1.6; /* Espaçamento da linha para melhor legibilidade */
-}
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px; /* Ajustado para garantir padding em todos os lados */
-}
-
-.block {
-  width: calc(100% - 30px); /* Ajuste para garantir espaço nas laterais */
-  margin: 20px 0;
-  padding: 20px; /* Ajustado para espaçamento interno */
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.intro, .call-to-action {
-  color: #fff;
-}
-
-.intro {
-  background-color: #B22234;
-  color: #fff;
-  display: flex;
-  align-items: center;
-}
-
-.intro-content {
-  flex: 1;
-  text-align: center;
+  max-width: 1200px;
+  margin: auto;
   padding: 20px;
 }
 
-.intro-content, .logo-container {
-  flex: 1;
+/* Adiciona a fonte Merriweather apenas para o título */
+header.intro h1 {
+  font-size: 2.8rem; /* Aumenta o tamanho para maior impacto */
+  margin-bottom: 20px; /* Ajusta o espaçamento para o subtítulo */
+}
+
+/* Garante que o texto descritivo permaneça legível e atraente */
+header.intro p {
+  font-size: 1.1rem; /* Ajusta para melhor legibilidade */
+  max-width: 800px; /* Limita a largura para uma leitura confortável */
+  margin: 0 auto 20px; /* Centraliza e adiciona espaço no fundo */
+}
+
+header, section, footer {
+  padding: 30px; /* Mais espaço para respirar */
   text-align: center;
+}
 
+/* Estilização Geral do Header */
+header.intro {
+  padding: 40px 20px; /* Espaçamento generoso */
+  text-align: center; /* Centraliza o conteúdo */
+  border-bottom: 5px solid #007BFF; /* Borda sólida como detalhe */
+}
+
+/* Estilização do Container do Logo */
+.logo-container {
+  margin-bottom: 20px; /* Espaço entre o logo e o título */
+}
+
+.logo {
+  width: 100px; /* Define um tamanho específico para o logo */
+  height: auto; /* Mantém a proporção do logo */
+}
+
+/* Estilização do Título */
+header.intro h1 {
+  font-size: 2.8rem; /* Tamanho grande para o título */
+  font-weight: 700; /* Fonte mais grossa */
+  margin-bottom: 15px; /* Espaço entre o título e o parágrafo */
+}
+
+/* Estilização do Parágrafo */
+header.intro p {
+  font-size: 1.2rem; /* Tamanho confortável para leitura */
+  max-width: 800px; /* Limita a largura do texto */
+  margin: auto; /* Centraliza o texto horizontalmente */
 }
 
 
-.features ul {
-  list-style: none;
-  padding: 0;
+.logo-container img {
+  max-width: 100px;
+  margin-bottom: 20px;
 }
 
-.features li {
-  margin-bottom: 10px;
-}
-
-.call-to-action {
-  background-color: #3C3B6E;
-  display: flex;
-  flex-direction: column; /* Organiza os filhos verticalmente */
-  align-items: center; /* Centraliza os itens na direção cruzada (horizontal) */
-  justify-content: center; /* Centraliza os itens na direção principal (vertical) */
-}
-
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
+/* Simplificação das cores e estilos dos títulos */
+h1, h2, h3 {
+  color: #333;
   font-weight: 700;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #45a049;
+.intro h1 {
+  margin-bottom: 1rem;
+}
+.video-and-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Certifica-se de que o conteúdo esteja alinhado verticalmente */
+  text-align: left; /* Alinha o texto à esquerda para uma leitura natural */
+  gap: 20px; /* Adiciona um espaço entre o vídeo e o texto */
+  padding: 20px 0; /* Espaço acima e abaixo da seção para respirar */
 }
 
 .video {
+  flex: 1 1 20%; /* Permite que o vídeo ocupe até metade da largura da seção */
+  max-width: 560px; /* Limita o tamanho do vídeo para não ficar muito grande */
+}
+
+.video_interno{
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.text-next-to-video {
+  flex: 1 1 40%; /* Permite que o texto ocupe até 40% da largura, dando mais espaço ao vídeo */
+}
+
+.video-and-text .buy-button {
+  width: 100%; /* Faz com que o botão ocupe toda a largura da seção */
+  margin-top: 20px; /* Espaço entre o texto/vídeo e o botão */
+  padding: 10px 0; /* Ajuste de padding para o botão ser mais alto */
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte do botão para destacar */
+  text-align: center; /* Garante que o texto do botão esteja centralizado */
+  display: block; /* Faz o botão ser um bloco, permitindo ajustes de largura e margem */
+  border-radius: 5px; /* Bordas levemente arredondadas para o botão */
+}
+
+
+/* Estilização dos botões para um design mais moderno */
+a.buy-button {
+  background-color: #007BFF; /* Azul vibrante para o botão */
+  color: #FFFFFF;
+  padding: 12px 25px;
+  border-radius: 30px; /* Bordas mais arredondadas */
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+a.buy-button:hover {
+  background-color: #0056b3; /* Efeito hover para o botão */
+}
+
+.features {
+  background-color: #f9f9f9; /* Cor de fundo suave para a seção toda */
+  padding: 40px; /* Espaçamento generoso */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Sombra suave para a seção */
+  text-align: center; /* Centraliza o texto para um visual limpo */
+}
+
+.features h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px; /* Mais espaço abaixo do título */
+}
+
+.feature-item {
+  flex-basis: calc(33.333% - 40px); /* Ajuste para 3 itens por linha com gap */
+  padding: 30px; /* Mais espaço interno */
+  background-color: #FFFFFF; /* Fundo branco para os itens */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra para profundidade */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+}
+
+.feature-item:hover {
+  transform: translateY(-5px); /* Efeito de "levantar" ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra mais pronunciada no hover */
+}
+
+.feature-icon {
+  width: 80px; /* Tamanho do ícone */
+  height: auto; /* Mantém a proporção do ícone */
+  margin-bottom: 20px; /* Espaço abaixo do ícone */
+}
+
+.feature-item h3 {
+  color: #333; /* Texto escuro para destaque */
+  margin-bottom: 10px; /* Espaço abaixo do subtítulo */
+}
+
+.feature-item p {
+  color: #666; /* Cor mais suave para o texto */
+  font-size: 16px; /* Tamanho confortável para leitura */
+}
+
+.packages {
+  text-align: center; /* Centraliza o texto dos pacotes */
+  padding: 40px 0; /* Espaçamento interno da seção */
+}
+
+.packages h2{
+  font-family: 'Merriweather', serif; /* Ou outra fonte que você prefira */
+  text-transform: uppercase; /* Torna todas as letras maiúsculas */
+  font-size: 2.1rem; /* Tamanho do texto aumentado */
+  font-weight: bold; /* Torna o texto em negrito */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+  padding-bottom: 0.5rem; /* Espaçamento interno para torná-lo mais proeminente */
+  border-bottom: 3px solid #007BFF; /* Adiciona uma borda inferior para destaque */
+  display: inline-block; /* Necessário para aplicar o padding e a borda corretamente */
+  margin-top: 2rem; /* Espaço acima do título para distinção */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.packages-grid {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.video iframe {
-  width: 100%;
-  height: 450px;
-  border-radius: 5px;
-  border: none;
-}
-
-.logo-container {
-  flex: 0 0 250px; /* Ajuste a largura do contêiner da logo conforme necessário */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.logo {
-  max-height: 100%; /* A logo preencherá o espaço vertical disponível */
-  max-width: 100%; /* A logo preencherá o espaço horizontal do contêiner */
-}
-
-.intro-content {
-  /* Centraliza o conteúdo de texto */
+.package-item {
+  flex: 1;
+  min-width: 250px; /* Garante que os cartões não fiquem muito pequenos */
+  max-width: calc(30% - 30px); /* Ajusta a largura máxima dos cartões */
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Necessário para o efeito de "flutuação" */
+  overflow: hidden; /* Evita que sombras ou elementos saiam dos limites do cartão */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+  justify-content: space-between; /* Distribui o espaço dentro do cartão */
+  min-height: 320px; /* Altura mínima para todos os cartões */
 }
 
 
-.features ul {
-  padding: 0;
-  margin-bottom: 60px; /* Aumenta a margem inferior para criar mais espaço após o bloco de características */
-  margin-top: 0.5em; /* Mais espaço acima da lista */
-  
+.package-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-.features li, .call-to-action p {
-  font-size: 1.3em; /* Simplificar e manter o tamanho da fonte consistente */
-}
-
-/* Você pode remover sombras e bordas arredondadas se desejar um design mais flat */
-.block {
-  border-radius: 0; /* Opcional: remover as bordas arredondadas */
-  box-shadow: none; /* Opcional: remover as sombras */
-}
-
-
-.testimonials {
-  background-color: #fff; /* Ou outra cor para destacar a seção */
-  border: 1px solid #ccc; /* Opcional, para delinear a seção */
-  padding: 20px;
-  margin-top: 40px; /* Espaço acima da seção de avaliações */
-}
-
-.testimonial {
-  background-color: #f0f0f0; /* Um leve contraste para cada avaliação */
-  border-left: 4px solid #4CAF50; /* Uma barra lateral para destaque */
+.package-item h3 {
+  color: #007BFF; /* Cor de destaque para o título do pacote */
   margin: 20px 0;
-  padding: 15px;
-  font-style: italic; /* Estilo para as citações de avaliação */
 }
 
-.testimonial p {
-  quotes: "“" "”" "‘" "’";
-  
+.package-item .price {
+  font-weight: bold; /* Negrito para o preço */
+  margin: 20px 0;
+}
+.package-advanced {
+  flex-basis: calc(33.333%); /* Faz com que ocupe um pouco mais de espaço */
+  padding: 30px; /* Mais espaço interno para destaque */
+  z-index: 10; /* Garante que ele fique acima dos outros cartões no hover */
+}
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto; /* Isso empurra o contêiner para a parte inferior do cartão */
 }
 
-.testimonial p:before {
-  content: open-quote;
-}
-
-.testimonial p:after {
-  content: close-quote;
-}
-
-.testimonial p {
-  display: inline; /* Assegura que as aspas apareçam corretamente */
-}
-
-
-.price-offer {
-  font-size: 3em; /* Aumenta significativamente o tamanho da fonte */
-  color: #FFD700; /* Uma cor vibrante para alto contraste */
-  font-weight: bold; /* Faz o texto ser negrito */
-  background-color: #2E2E2E; /* Fundo escuro para a oferta se destacar */
-  padding: 10px 20px; /* Padding para dar mais espaço ao redor do texto */
-  border-radius: 10px; /* Bordas arredondadas para um visual moderno */
-  display: inline-block; /* Permite aplicar padding e background-color */
-  margin: 20px 0; /* Espaçamento acima e abaixo para destacar */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para adicionar profundidade */
-}
-
-.inline-link {
-  color: #FFD700; /* Cor de destaque para o link dentro do texto */
-  text-decoration: underline; /* Sublinhado para indicar que é um link clicável */
-  font-weight: 700; /* Peso da fonte para negrito */
-}
-
-.inline-link-segredo {
-  color: #D50000; /* Cor de destaque para o link dentro do texto */
-  text-decoration: underline; /* Sublinhado para indicar que é um link clicável */
-  font-weight: 700; /* Peso da fonte para negrito */
-}
-
-.inline-link-segredo:hover, .inline-link-segredo:focus {
-  color: #0047AB; /* Cor mais escura no hover e focus */
-  text-decoration: none; /* Remover sublinhado ao passar o mouse ou focar */
-}
-
-.inline-link:hover, .inline-link:focus {
-  color: #FFC107; /* Cor mais escura no hover e focus */
-  text-decoration: none; /* Remover sublinhado ao passar o mouse ou focar */
+.price {
+  color: #007BFF; /* Azul que já está sendo utilizado no site */
+  font-weight: bold; /* Torna o preço em negrito */
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte para dar ênfase */
+  margin: 10px 0 20px; /* Espaçamento adequado */
+  display: block; /* O preço é um bloco para permitir margens */
+  padding: 5px 10px; /* Espaçamento interno ao redor do preço */
+  border-radius: 5px; /* Bordas arredondadas para suavizar */
 }
 
 .buy-button {
-  background-color: #FFC107; /* Cor chamativa para o botão */
-  color: #333; /* Cor do texto do botão */
-  font-size: 1.5em; /* Tamanho da fonte maior para o botão */
-  font-weight: 700; /* Peso da fonte para negrito */
-  border-radius: 50px; /* Bordas arredondadas para um estilo mais moderno */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar destaque ao botão */
-  transition: background-color 0.3s, transform 0.3s; /* Suaviza a transição de cor e transformação */
+  /* Estilos existentes do botão */
+  width: 100%; /* Ocupa a largura total do contêiner */
 }
 
 
-  .buy-button:hover, .buy-button:focus {
-    background-color: #FFA000; /* Cor mais escura ao interagir */
-    transform: translateY(-2px); /* Efeito de "levantar" um pouco o botão */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
-  }
+.buy-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px 25px; /* Aumenta o padding para que os botões tenham uma altura maior */
+  margin-top: auto; /* Empurra o botão para a parte inferior do cartão */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-size: 1rem;
+  width: 80%; /* Define uma largura padrão para todos os botões */
+  align-self: center; /* Centraliza o botão no cartão */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
 
-  .price-offer{
-    width: 20%; /* Faz com que ocupem a largura total do contêiner */
-    text-align: center; /* Garante que o texto dentro deles esteja centralizado */
-    margin: 10px 0; /* Adiciona um espaçamento vertical para separá-los */
-  }
+.buy-button:hover, .buy-button:focus {
+  background-color: #0056b3;
+  color: #FFFFFF;
+  text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+}
+.video-highlight iframe {
+  max-width: 720px;
+  width: 100%;
+  height: 405px;
+  border-radius: 10px; /* Bordas arredondadas para o vídeo */
+  margin: 20px 0; /* Espaçamento adequado em torno do vídeo */
+}
 
-  .buy-button {
-    width: 100%; /* Faz com que ocupem a largura total do contêiner */
-    text-align: center; /* Garante que o texto dentro deles esteja centralizado */
-    margin: 0; /* Adiciona um espaçamento vertical para separá-los */
-  }
-  .buy-button-link {
-    background-color: #FFC107; /* Cor chamativa para o botão */
-    font-size: 1.5em; /* Tamanho da fonte maior para o botão */
-    font-weight: 700; /* Peso da fonte para negrito */
-    border-radius: 50px; /* Bordas arredondadas para um estilo mais moderno */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar destaque ao botão */
-    transition: background-color 0.3s, transform 0.3s;
-    }
+.testimonials {
+  background-color: #f9f9f9; /* Cor de fundo neutra */
+  padding: 40px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
+  text-align: center; /* Centraliza o texto do título */
+  margin: 40px 0; /* Margem externa para separar das outras seções */
+}
 
-    .buy-button-link:hover {
-      background-color: #FFA000; /* Cor de fundo ao passar o mouse */
-    }
+.testimonials h3 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-size: 2rem; /* Tamanho maior do título */
+}
 
+.testimonial-container {
+  display: flex;
+  flex-direction: column; /* Organiza os depoimentos em uma coluna */
+  gap: 20px; /* Espaçamento entre os depoimentos */
+  margin-top: 20px; /* Espaço adicional acima dos depoimentos */
+}
+
+.testimonial {
+  background-color: #ffffff; /* Fundo branco para destacar cada depoimento */
+  border-left: 4px solid #007BFF; /* Linha lateral para destacar */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+  position: relative; /* Para posicionamento de elementos adicionais, se necessário */
+}
+
+.testimonial p {
+  font-size: 1rem; /* Tamanho adequado para leitura confortável */
+  line-height: 1.6; /* Espaçamento da linha */
+  color: #333; /* Cor escura para texto */
+  margin-bottom: 10px; /* Espaço abaixo do parágrafo */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilização da Seção de FAQ */
+.faq {
+  background-color: #f9f9f9; /* Cor de fundo suave */
+  border-radius: 8px; /* Bordas suavemente arredondadas */
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd; /* Linha sutil entre as perguntas */
+  padding: 15px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none; /* Remove a borda do último item */
+}
+
+.faq h2 {
+  color: #007BFF; /* Cor vibrante para o título da seção */
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  cursor: pointer; /* Indica que o item é clicável */
+  color: #333; /* Cor escura para contraste */
+  margin-bottom: 10px; /* Espaço entre título e conteúdo da FAQ */
+  font-size: 18px; /* Tamanho da fonte para legibilidade */
+}
+
+.faq-item p {
+  color: #666; /* Cor mais suave para o texto */
+  font-size: 16px; /* Tamanho menor da fonte para o conteúdo */
+  margin-top: 0; /* Remove margem padrão do topo */
+  max-height: 0; /* Inicialmente esconde o conteúdo */
+  overflow: hidden; /* Previne o conteúdo de ser mostrado */
+  transition: max-height 0.3s ease-out; /* Animação suave ao expandir */
+}
+
+.faq-item.active p {
+  max-height: 200px; /* Altura máxima quando expandido (ajuste conforme necessário) */
+}
+
+/* Estilização para ícones de expansão/colapso (opcional) */
+.faq-item h3::after {
+  content: '\002B'; /* Símbolo de adição */
+  float: right; /* Posiciona à direita do título */
+  color: #007BFF; /* Cor correspondente ao tema */
+}
+
+.faq-item.active h3::after {
+  content: '\2212'; /* Símbolo de subtração */
+}
+
+
+/* Footer com um design mais clean */
+footer {
+  padding: 20px;
+  font-size: 0.8em;
+}
+
+/* Ajustes para Responsividade */
 @media (max-width: 768px) {
-  .intro {
-    flex-direction: column;
-    text-align: center;
+  .features-grid, .packages-grid {
+      flex-direction: column;
   }
-  .intro-content, .logo-container {
-    width: 100%;
-    padding: 10px;
+
+  .feature-item, .package-item {
+      flex-basis: 100%;
   }
-  .logo-container {
-    order: -1; /* Isso garantirá que a logo apareça acima do texto em telas menores */
-  }
-  .price-offer, .buy-button {
-    width: auto; /* Permite que o tamanho se ajuste ao conteúdo */
-    padding: 10px 20px; /* Ajusta o padding para melhor se adequar a telas menores */
-  }
+
+  .video-and-text {
+    flex-direction: column; /* Empilha vídeo e texto verticalmente em telas menores */
 }
 
-@media (max-width: 480px) {
-  .container {
-      padding: 10px;
-  }
+.video, .text-next-to-video {
+    flex-basis: 100%; /* Faz com que cada elemento ocupe a largura total em telas menores */
+}
 
-  .block, .video {
-      width: calc(100% - 20px); /* Reduz ainda mais para pequenas telas */
-      padding: 10px;
-      margin: 10px auto;
-  }
-
-  .video iframe {
-      height: 200px;
+  header, section, footer {
+      padding: 40px 20px; /* Ajuste de padding em telas menores */
   }
 }
