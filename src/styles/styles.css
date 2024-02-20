@@ -409,6 +409,11 @@ footer {
     flex-basis: 100%; /* Faz com que cada elemento ocupe a largura total em telas menores */
 }
 
+.packages-grid {
+  flex-direction: column; /* Organiza os itens em uma coluna */
+  align-items: center; /* Centraliza os itens no eixo vertical */
+}
+s
   header, section, footer {
       padding: 40px 20px; /* Ajuste de padding em telas menores */
   }
