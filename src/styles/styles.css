@@ -135,10 +135,8 @@ a.buy-button:hover {
 }
 
 .features {
-  background-color: #f9f9f9; /* Cor de fundo suave para a seção toda */
   padding: 40px; /* Espaçamento generoso */
   border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Sombra suave para a seção */
   text-align: center; /* Centraliza o texto para um visual limpo */
 }
 
@@ -150,6 +148,7 @@ a.buy-button:hover {
 .feature-item {
   flex-basis: calc(33.333% - 40px); /* Ajuste para 3 itens por linha com gap */
   padding: 30px; /* Mais espaço interno */
+  margin: 30px;
   background-color: #FFFFFF; /* Fundo branco para os itens */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra para profundidade */
@@ -187,11 +186,10 @@ a.buy-button:hover {
   text-transform: uppercase; /* Torna todas as letras maiúsculas */
   font-size: 2.1rem; /* Tamanho do texto aumentado */
   font-weight: bold; /* Torna o texto em negrito */
-  margin-bottom: 1rem; /* Espaço abaixo do título */
-  padding-bottom: 0.5rem; /* Espaçamento interno para torná-lo mais proeminente */
+  padding: 0.8rem; /* Espaçamento interno para torná-lo mais proeminente */
   border-bottom: 3px solid #007BFF; /* Adiciona uma borda inferior para destaque */
   display: inline-block; /* Necessário para aplicar o padding e a borda corretamente */
-  margin-top: 2rem; /* Espaço acima do título para distinção */
+  margin: 1.5rem; /* Espaço acima do título para distinção */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -293,10 +291,8 @@ a.buy-button:hover {
 }
 
 .testimonials {
-  background-color: #f9f9f9; /* Cor de fundo neutra */
   padding: 40px; /* Espaçamento interno */
   border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
   text-align: center; /* Centraliza o texto do título */
   margin: 40px 0; /* Margem externa para separar das outras seções */
 }
@@ -332,11 +328,9 @@ a.buy-button:hover {
 
 /* Estilização da Seção de FAQ */
 .faq {
-  background-color: #f9f9f9; /* Cor de fundo suave */
   border-radius: 8px; /* Bordas suavemente arredondadas */
   padding: 20px;
   margin-top: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
 }
 
 .faq-item {
