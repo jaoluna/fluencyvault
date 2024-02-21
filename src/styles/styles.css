@@ -233,6 +233,9 @@ a.buy-button:hover {
   font-weight: bold; /* Negrito para o preço */
   margin: 20px 0;
 }
+
+
+
 .package-advanced {
   flex-basis: calc(33.333%); /* Faz com que ocupe um pouco mais de espaço */
   padding: 30px; /* Mais espaço interno para destaque */
@@ -242,18 +245,26 @@ a.buy-button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto; /* Isso empurra o contêiner para a parte inferior do cartão */
+  margin-top: auto;
+  text-align: center;
+  margin-top: 20px; /* Isso empurra o contêiner para a parte inferior do cartão */
 }
 
-.price {
-  color: #007BFF; /* Azul que já está sendo utilizado no site */
-  font-weight: bold; /* Torna o preço em negrito */
-  font-size: 1.5rem; /* Aumenta o tamanho da fonte para dar ênfase */
-  margin: 10px 0 20px; /* Espaçamento adequado */
-  display: block; /* O preço é um bloco para permitir margens */
-  padding: 5px 10px; /* Espaçamento interno ao redor do preço */
-  border-radius: 5px; /* Bordas arredondadas para suavizar */
+
+.original-price {
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #777; /* Cor cinza para indicar que não é mais o preço atual */
+  font-size: 1em; /* Um pouco menor do que o preço de venda */
 }
+
+.sale-price {
+  color: #007BFF; /* Cor chamativa para destacar o preço de oferta */
+  font-size: 1.8em; /* Maior para chamar atenção */
+  font-weight: bold;
+  margin-top: 5px;
+}
+
 
 .buy-button {
   /* Estilos existentes do botão */
