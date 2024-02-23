@@ -16,7 +16,28 @@ body, html {
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
+}
+
+.promo-banner {
+  font-family: 'Roboto', sans-serif;
+  background-color: #B22234; /* Vermelho da bandeira dos EUA */
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.25rem; /* Tamanho maior para legibilidade */
+  font-weight: bold;
+}
+
+.promo-banner a {
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block; /* Faz o botão ser alinhado ao centro */
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Adiciona a fonte Merriweather apenas para o título */
